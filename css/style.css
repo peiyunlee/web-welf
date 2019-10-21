@@ -3,12 +3,12 @@
     margin:0;
     box-sizing:border-box;
     position: relative;
-    font-size:26px;
     font-family: 'Noto Sans CJK TC';
 }
 html,body{
     width:100%;
     height:100%;
+    font-size:26px;
 }
 
 /* nav */
@@ -24,11 +24,9 @@ nav{
     align-items: center;
     padding: 0 4.69vw;
 }
-.img_nlogo{
-    width: 188px;
-}
 .con_nav{
-    width:685px;
+    width: 57vw;
+    max-width: 692px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,11 +37,13 @@ nav ul{
     color: #ffffff;
     display: flex;
     justify-content: space-between;
+    margin-top:5px;
 }
 nav li{
     width:159px;
     height:51px;
-    border:2px solid #ffffff;
+    transition:all 0.3s;
+    padding: 4px 17px;
 }
 nav a{
     color: #ffffff;
@@ -52,14 +52,17 @@ nav a{
     align-items: center;
 }
 .con_nav a{
-    letter-spacing: 4px;
-    padding: 2.5px 17.5px;
-    text-align: center;
+    letter-spacing: 0.2vw;
+    text-align: justify;
+}
+.con_nav li:hover{
+    border:2px solid #ffffff;
+    transition:all 0.3s;
 }
 .music{
     background-color: #fff;
     width:35.35px;
-    height:37.83px;
+    height:37.5px;
 }
 
 /* header */
@@ -67,10 +70,30 @@ header{
     width:100vw;
     height:100vh;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 .img_hbg{
     position: absolute;
     width: 100vw;
     height:auto;
-    top:-5vw;
+    /* top:-5vw; */
 }
+.con_hcontent{
+    width:38.85%;
+    height:22.25%;
+    top:18vw;
+    display: grid;
+}
+.img_hlogo{
+    width: 100%;
+}
+.img_teamn{
+    width: 50%;
+}
+.img_teamn{
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10px;
+}
+
