@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>WELF</title>
     <link rel="stylesheet" href="/css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/js/index.js"></script>
 </head>
 
 <body>
@@ -21,27 +23,28 @@
                     <li><a href="">角色介紹</a></li>
                     <li><a href="">遊玩操作</a></li>
                 </ul>
-                <div class="music"></div>
+                <img class="img_music" src="/images/首頁/first/music.png" alt="">
                 <!-- <audio src="" controls="smallconsole"></audio> -->
             </div>
         </nav>
         <header>
-            <img class="img_hbg" src="/images/首頁/first/bg.png" alt="">
             <div class="con_hcontent">
+                <div class="box_animate"></div>
                 <img class="img_hlogo" src="/images/首頁/first/blogo.png" alt="">
                 <img class="img_teamn" src="/images/首頁/first/teamn.png" alt="">
             </div>
             <div class="contianer_more">
-                <img class="img_hbottom" src="/images/首頁/first/bottom.png" alt="">
                 <div class="con_more">
-                    <div class="t_more"></div>
-                    <a href="#sec_story">
+                    <div id="more">
+                        <div class="t_more">MORE</div>
                         <img class="img_arrow" src="/images/首頁/first/arrow.png" alt="">
-                    </a>
-                </div>
+                    </div>
+                </div><img class="img_hbottom" src="/images/首頁/first/bottom.png" alt="">
+
+
             </div>
         </header>
-        <section id="sec_story"></section>
+        <section id="sec_story" class="sec_story"></section>
         <section id="sec_character"></section>
         <section id="sec_buy"></section>
         <footer></footer>

@@ -7,10 +7,13 @@
 }
 html,body{
     width:100%;
+    min-width:1280px;
     height:100%;
-    font-size:26px;
+    font-size:20px;
 }
-
+a{
+    text-decoration: none;
+}
 /* nav */
 nav{
     width:100%;
@@ -22,17 +25,23 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 4.69vw;
+    padding: 0 5vw;
+    /* transform: translateY(-100%); */
+    animation: nav_show 0.5s linear 1;
 }
 .con_nav{
-    width: 57vw;
-    max-width: 692px;
+    width:32.5vw;
+    min-width: 555px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+.img_nlogo{
+    width:100%;
+}
 nav ul{
-    width:555px;
+    width: 26vw;
+    min-width: 447.5px;
     list-style-type: none;
     color: #ffffff;
     display: flex;
@@ -40,60 +49,117 @@ nav ul{
     margin-top:5px;
 }
 nav li{
-    width:159px;
-    height:51px;
+    width:132px;
+    height:42.5px;
     transition:all 0.3s;
-    padding: 4px 17px;
+    padding: 4px 16.5px;
 }
 nav a{
     color: #ffffff;
-    text-decoration: none;
     display: flex;
     align-items: center;
+    letter-spacing: 4px;
 }
 .con_nav a{
-    letter-spacing: 0.2vw;
     text-align: justify;
 }
 .con_nav li:hover{
-    border:2px solid #ffffff;
+    border:1.5px solid #ffffff;
     transition:all 0.3s;
 }
-.music{
-    background-color: #fff;
-    width:35.35px;
-    height:37.5px;
+.img_music{
+    width:27.5px;
 }
 
 /* header */
 header{
-    width:100vw;
+    width:100%;
     height:100vh;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-}
-.img_hbg{
-    position: absolute;
-    width: 100vw;
-    height:auto;
-    /* top:-5vw; */
+    background-image: url(/images/首頁/first/bg.png);
+    background-size: cover;
 }
 .con_hcontent{
-    width:38.85%;
-    height:22.25%;
-    top:18vw;
-    display: grid;
+    width:555px;
+    height:auto;
+    top:17vw;
+    margin-left:auto;
+    margin-right:auto;
+    overflow: hidden;
 }
 .img_hlogo{
     width: 100%;
+    transform: translateY(130%);
+    animation: hcontent_show 0.5s 0.75s ease-out 1;
+    animation-fill-mode: forwards;
 }
 .img_teamn{
-    width: 50%;
-}
-.img_teamn{
+    display: block;
+    width: 47.5%;
     margin-left:auto;
     margin-right:auto;
     margin-top:10px;
+    transform: translateY(130%);
+    animation: hcontent_show 0.5s 0.75s ease-out 1;
+    animation-fill-mode: forwards;
+}
+.contianer_more{
+    position: absolute;
+    bottom:-7.5px;
+    /* transform: translateY(100%); */
+    animation: more_show 0.5s ease-out 1;
+}
+.img_hbottom{
+    width: 100%;
+    
+}
+.con_more{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+.img_arrow{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.t_more{
+    color: #ACACAC;
 }
 
+/* section */
+section{
+    width:100%;
+    height:100vh;
+}
+
+/* sec_story */
+.sec_story{
+    background-color: red;
+}
+
+/* animate */
+@keyframes nav_show{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+@keyframes more_show{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+@keyframes hcontent_show{
+    0%{
+        transform: translateY(130%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
