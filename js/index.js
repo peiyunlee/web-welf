@@ -10,7 +10,7 @@
 //   })
 
 $(document).ready(function () {
-  $('#more').click(function () {
+  $('#hbottom').click(function () {
     $('html,body').animate({ 
       scrollTop: $('#sec_story').offset().top }, 1000);
     });
