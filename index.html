@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>WELF</title>
+    <title>WELF | Mama Wu & Lovers</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/index.js"></script>
 </head>
@@ -15,38 +17,61 @@
     <div class="wrapper">
         <nav>
             <a href="index.html">
-                <img class="img_nlogo" src="images/main/first/nav_logo.png" alt="">
+                <img class="img_nlogo" src="images/home/first/nav_logo.png" alt="">
             </a>
             <div class="con_nav">
                 <ul>
-                    <li><a href="">故事背景</a></li>
-                    <li><a href="">角色介紹</a></li>
-                    <li><a href="">遊玩操作</a></li>
+                    <li><a href="pages/story.html">故事背景</a></li>
+                    <li><a href="pages/character.html">角色介紹</a></li>
+                    <li><a href="pages/play.html">遊玩操作</a></li>
                 </ul>
-                <img class="img_music" src="images/main/first/music.png" alt="">
+                <img class="img_music" src="/images/home/first/music.png" alt="">
                 <!-- <audio src="" controls="smallconsole"></audio> -->
             </div>
         </nav>
         <header>
             <div class="con_hcontent">
-                <div class="box_animate"></div>
-                <img class="img_hlogo" src="images/main/first/blogo.png" alt="">
-                <img class="img_teamn" src="images/main/first/teamn.png" alt="">
+                <!-- <div class="box_animate"></div> -->
+                <img class="img_hlogo" src="./images/home/first/blogo.png" alt="">
+                <img class="img_teamn" src="./images/home/first/teamn.png" alt="">
             </div>
-            <div class="contianer_more">
-                <div class="con_more">
-                    <div id="more">
-                        <div class="t_more">MORE</div>
-                        <img class="img_arrow" src="images/main/first/arrow.png" alt="">
+            <a class="con_hbottom" href="#sec_story" id="hbottom">
+                <div class="con_hmore">
+                    <div>
+                        <div class="t_hmore">MORE</div>
+                        <div class="box_harrow">
+                            <img class="img_arrow" src="images/home/first/arrow.png" alt="">
+                        </div>
                     </div>
-                </div><img class="img_hbottom" src="images/main/first/bottom.png" alt="">
-
-
-            </div>
+                </div>
+                <img class="img_hbottom" src="images/home/first/bottom.png" alt="">
+            </a>
         </header>
-        <section id="sec_story" class="sec_story"></section>
+        <section id="sec_story" class="sec_story">
+            <img class="img_sbganim" src="images/home/second/bgani.png" alt="">
+            <img class="img_sbg1" src="images/home/second/bg1.png" alt="">
+            <img class="img_sbg2" src="images/home/second/bg2.png" alt="">
+            <div class="con_sarticle">
+                <article class="ar_sl">
+                    <h1>故事背景
+                        <img class="img_sdot" src="images/home/second/dot.png" alt="">
+                    </h1>
+                    <p class="p_lcontent1">
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp這個世界分成了五大地區，五大地區都各有一個大河川，在河川裡曾經有一種神秘的物種 —— WELF水精靈
+                    </p>
+                    <p class="p_lcontent2">
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp這樣的美麗物種曾經和人類一同生活在這個世界上，但卻在某家黑心的實驗室迫害下慢慢地在世界上絕跡......
+                    </p>
+                    <a href="pages/story.html" class="btn_smore">MORE</a>
+                </article>
+                <article class="ar_sr">
+                    <img class="img_swindow" src="images/home/second/glab.png" alt="">
+                    <div class="t_rcontent">Grassland laboratory</div>
+                </article>
+            </div>
+        </section>
         <section id="sec_character"></section>
-        <section id="sec_buy"></section>
+        <section id="sec_play"></section>
         <footer></footer>
     </div>
 </body>

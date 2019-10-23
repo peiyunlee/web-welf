@@ -9,7 +9,7 @@ html,body{
     width:100%;
     min-width:1280px;
     height:100%;
-    font-size:20px;
+    font-size:28px;
 }
 a{
     text-decoration: none;
@@ -49,19 +49,22 @@ nav ul{
     margin-top:5px;
 }
 nav li{
-    width:132px;
-    height:42.5px;
+    width:145px;
+    height:47.5px;
     transition:all 0.3s;
-    padding: 4px 16.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 nav a{
     color: #ffffff;
     display: flex;
     align-items: center;
     letter-spacing: 4px;
+    font-size: 24px;
 }
 .con_nav a{
-    text-align: justify;
+    text-align: center;
 }
 .con_nav li:hover{
     border:1.5px solid #ffffff;
@@ -73,9 +76,10 @@ nav a{
 
 /* header */
 header{
-    width:100%;
+    width: 100%;
+    min-width:1280px;
     height:100vh;
-    background-image: url(../images/main/first/bg.png);
+    background-image: url(../images/home/first/bg.png);
     background-size: cover;
 }
 .con_hcontent{
@@ -102,40 +106,140 @@ header{
     animation: hcontent_show 0.5s 0.75s ease-out 1;
     animation-fill-mode: forwards;
 }
-.contianer_more{
+/* .box_animate{
+    width: 100%;
+    height: 300px;
+    background-color: #fff;
     position: absolute;
-    bottom:-7.5px;
+    z-index: 1;
+    transform: translate(0%,100%);
+    animation: hcontent_box 0.75s 0.75s linear 1;
+} */
+.con_hbottom{
+    width:100%;
+    position: absolute;
+    bottom:-8.5px;
     /* transform: translateY(100%); */
-    animation: more_show 0.5s ease-out 1;
+    animation: hmore_show 0.5s ease-out 1;
 }
 .img_hbottom{
     width: 100%;
-    
 }
-.con_more{
+.con_hmore{
     position: absolute;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
     z-index: 1;
+    overflow: hidden;
+}
+.box_harrow{
+    margin-top:5px;
+    width: 100%;
+    height: 20px;
+    overflow: hidden;
 }
 .img_arrow{
     left: 50%;
-    transform: translateX(-50%);
+    animation: harrow 1.5s linear infinite ;
 }
-.t_more{
+.t_hmore{
     color: #ACACAC;
+    letter-spacing: 5px;
 }
 
 /* section */
 section{
     width:100%;
-    height:100vh;
+    height:1080px;
 }
-
+h1{
+    font-size: 60px;
+    font-weight:500;
+    letter-spacing: 10px;
+}
 /* sec_story */
 .sec_story{
-    background-color: red;
+    /* background-color: red; */
+    color:#004F7E;
+}
+.img_sbganim,.img_sbg1,.img_sbg2{
+    position: absolute;
+}
+.img_sbganim{
+    width:100%;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-40%);
+}
+.img_sbg1{
+    right:0;
+    height: 1080px;
+}
+.img_sbg2{
+    right:5vw;
+    height:1080px;
+}
+.con_sarticle{
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding:260px 14vw;
+}
+.ar_sl{
+    width:700px;
+    height:auto;
+    font-weight: 350;
+    letter-spacing: 5px;
+    /* border:1px solid #000; */
+}
+.ar_sl p{
+    margin-top:3vw;
+    line-height: 50px;
+    text-align: justify;
+}
+.btn_smore{
+    display: block;
+    border: 1.5px solid #004F7E;
+    border-radius: 50px;
+    width: 150px;
+    height: 55px;
+    text-align: center;
+    padding-top:7.5px;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 50px 0 0 100%;
+    transform: translate(-100%,0);
+    color: #004F7E;
+}
+.ar_sr{
+    align-self: center;
+    margin-top:2vw;
+    margin-left:80px;
+}
+.img_swindow{
+    display: block;
+    width: 30vw;
+    min-width: 400px;
+    max-width: 466px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.t_rcontent{
+    margin-top:2vw;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1.5px solid #004F7E;
+    border-radius: 50px;
+    width: 400px;
+    height: 70px;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    padding-top:17px;
+    text-align: center;
 }
 
 /* animate */
@@ -147,12 +251,23 @@ section{
         transform: translateY(0%);
     }
 }
-@keyframes more_show{
+@keyframes hmore_show{
     0%{
         transform: translateY(100%);
     }
     100%{
         transform: translateY(0%);
+    }
+}
+@keyframes hcontent_box{
+    0%{
+        transform: translate(0%,100%);
+    }
+    50%{
+        transform: translate(0%,0%);
+    }
+    100%{
+        transform: translate(100%,0%);
     }
 }
 @keyframes hcontent_show{
@@ -161,5 +276,19 @@ section{
     }
     100%{
         transform: translateY(0%);
+    }
+}
+@keyframes harrow{
+    0%{
+        transform: translate(-50%,-200%);
+    }
+    40%{
+        transform: translate(-50%,-80%);
+    }
+    80%{
+        transform: translate(-50%,-80%);
+    }
+    100%{
+        transform: translate(-50%,0%);
     }
 }
