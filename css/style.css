@@ -250,6 +250,7 @@ h1{
 /* seccharacter */
 .img_cbg{
     position: absolute;
+    width: 100%;
 }
 .ar_character{
     width:100%;
@@ -258,6 +259,9 @@ h1{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+.con_cheader{
+    height: auto;
 }
 .ar_character h1,.ar_character p{
     width: 100%;
@@ -268,15 +272,36 @@ h1{
     letter-spacing: 5px;
 }
 .con_chcontent{
+    height: ;
     display: flex;
     justify-content: center;
 }
+.con_chlist{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width:12vw;
+    min-width: 150px;
+    margin:1vw;
+}
+.con_chlist3{
+    z-index: 2;
+    transform:scale(1.5) translateY(15px);
+}
 .box_cname{
-    border:1.5px solid #004F7E;
+    border:2px solid #004F7E;
     border-radius: 50px;
-    width:120px;
+    margin-top:25px;
+    width:50%;
+    height: 50px;
+    font-weight: 400;
+    text-align: center;
+    padding-top:3px;
 }
 
+.img_chead{
+    width: 100%;
+}
 /* animate */
 @keyframes nav_show{
     0%{
