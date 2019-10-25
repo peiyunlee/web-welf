@@ -220,6 +220,11 @@ h1{
     transform: translate(-100%,0);
     color: #004F7E;
 }
+.btn_smore:hover,.btn_smore:active{
+    background-color: #004F7E;
+    color: #ffffff;
+    transition: all 0.3s;
+}
 .ar_sr{
     align-self: center;
     /* margin-top:0vw; */
@@ -257,12 +262,9 @@ h1{
     width:100%;
     height:100%;
     padding:200px 0 0 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 .con_cheader{
-    height: auto;
+    height: 200px;
 }
 .ar_character h1,.ar_character p{
     width: 100%;
@@ -272,10 +274,26 @@ h1{
     margin-top: 35px;
     letter-spacing: 5px;
 }
+.con_ccontent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn_c{
+    border:none;
+    background-color: #000000;
+    height: 50px;
+    margin:0 5%;
+}
 .con_chcontent{
-    /* height: ; */
+    width: auto;
     display: flex;
     justify-content: center;
+    margin:50px 0 0 0;
+}
+.img_crbtn{
+    width:50px;
+    background-image: url();
 }
 .con_chlist{
     display: flex;
@@ -283,26 +301,36 @@ h1{
     flex-wrap: wrap;
     width:12vw;
     min-width: 150px;
-    margin:1vw;
+    margin:0 1%
 }
 .con_chlist3{
     z-index: 2;
-    transform:scale(1.5) translateY(15px);
+    transform:scale(1.4) translateY(15px);
+    margin:0 4%;
+    min-width: 150px;
+}
+.img_chead{
+    width: 100%;
+}
+.box_cname3{
+    background-color: #004F7E;
+    color: #ffffff;
+    margin-top:15px;
 }
 .box_cname{
     border:2px solid #004F7E;
     border-radius: 50px;
     margin-top:25px;
-    width:50%;
-    height: 50px;
-    font-weight: 400;
+    width:55%;
+    min-width: 125px;
+    height: 40px;
     text-align: center;
-    padding-top:3px;
+    padding-top:1.5px;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 2px;
 }
 
-.img_chead{
-    width: 100%;
-}
 /* animate */
 @keyframes nav_show{
     0%{
