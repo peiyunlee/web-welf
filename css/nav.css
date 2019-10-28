@@ -14,6 +14,12 @@ nav{
     /* transform: translateY(-100%); */
     animation: nav_show 0.5s linear 1;
 }
+.nav_bgcolor1{
+    background-color: rgba(0,79,126,1);
+}
+.nav_bgcolor2{
+    background-color: #0063FF;
+}
 .con_nav{
     width:32.5vw;
     min-width: 555px;
