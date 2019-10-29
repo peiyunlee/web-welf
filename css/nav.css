@@ -16,9 +16,11 @@ nav{
 }
 .nav_bgcolor1{
     background-color: rgba(0,79,126,1);
+    transition: all 0.3s;
 }
 .nav_bgcolor2{
     background-color: #0063FF;
+    transition: all 0.3s;
 }
 .con_nav{
     width:32.5vw;
