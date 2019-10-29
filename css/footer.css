@@ -1,0 +1,43 @@
+/* footer */
+footer{
+    background-color: #004F7E;
+    height: 420px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+.ar_f{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+.con_flist{
+    margin-right:30px;
+}
+.con_fheader{
+    font-size: 28px;
+    font-weight:500;
+    letter-spacing: 5px;
+    line-height: 35px;
+}
+.line{
+    width:10px;
+    height:65px;
+    background-color: #fff;
+    position: absolute;
+}
+.t_fh,.t_fcontent{
+    padding-left:30px;
+}
+.t_fcontent{
+    margin-top:40px;
+    font-size: 26px;
+    font-weight:300;
+    letter-spacing: 5px;
+    line-height: 40px;
+}
+.img_flogo{
+    width: 15%;
+}
