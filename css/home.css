@@ -48,15 +48,6 @@ header{
     animation: hcontent_show 0.5s 0.75s ease-out 1;
     animation-fill-mode: forwards;
 }
-/* .box_animate{
-    width: 100%;
-    height: 300px;
-    background-color: #fff;
-    position: absolute;
-    z-index: 1;
-    transform: translate(0%,100%);
-    animation: hcontent_box 0.75s 0.75s linear 1;
-} */
 .con_hbottom{
     width:100%;
     position: absolute;
