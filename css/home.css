@@ -51,7 +51,7 @@ header{
 .con_hbottom{
     width:100%;
     position: absolute;
-    bottom:-8.5px;
+    bottom:-10px;
     /* transform: translateY(100%); */
     animation: hmore_show 0.5s ease-out 1;
 }
