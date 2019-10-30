@@ -10,7 +10,7 @@ html,body{
     min-width:1280px;
     height:100%;
     font-size:28px;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 
@@ -68,7 +68,7 @@ header,section{
     margin-top:90px;
     line-height: 60px;
     letter-spacing: 5px;
-    font-weight:400;
+    font-weight:300;
 }
 
 
@@ -110,8 +110,6 @@ section{
 .img_ibg_right{
     position: absolute;
     right: 32%;
-    /* transform: translateX(50%); */
-    
 }
 .con_sideintro{
     position: absolute;
@@ -204,4 +202,3 @@ section{
     margin-right:140px;
     margin-left:120px;
 }
-
