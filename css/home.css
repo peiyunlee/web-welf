@@ -10,7 +10,7 @@ html,body{
     min-width:1280px;
     height:100%;
     font-size:28px;
-    font-weight: 350;
+    font-weight: 400;
 }
 a{
     text-decoration: none;
@@ -48,15 +48,6 @@ header{
     animation: hcontent_show 0.5s 0.75s ease-out 1;
     animation-fill-mode: forwards;
 }
-/* .box_animate{
-    width: 100%;
-    height: 300px;
-    background-color: #fff;
-    position: absolute;
-    z-index: 1;
-    transform: translate(0%,100%);
-    animation: hcontent_box 0.75s 0.75s linear 1;
-} */
 .con_hbottom{
     width:100%;
     position: absolute;
@@ -112,7 +103,6 @@ h1{
 
 /* roll */
 .img_bganimroll{
-    width:100%;
     left:50%;
     top:50%;
     transform: translate(-50%,-40%);
@@ -137,7 +127,7 @@ h1{
 .ar_sl{
     width:700px;
     height:auto;
-    font-weight: 350;
+    font-weight: 400;
     letter-spacing: 5px;
     /* border:1px solid #000; */
 }
