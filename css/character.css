@@ -110,8 +110,6 @@ section{
 .img_ibg_right{
     position: absolute;
     right: 32%;
-    /* transform: translateX(50%); */
-    
 }
 .con_sideintro{
     position: absolute;
