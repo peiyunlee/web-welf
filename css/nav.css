@@ -11,7 +11,6 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 0 5vw;
-    /* transform: translateY(-100%); */
     animation: nav_show 0.5s linear 1;
 }
 .nav_bgcolor1{
@@ -20,6 +19,10 @@ nav{
 }
 .nav_bgcolor2{
     background-color: #0063FF;
+    transition: all 0.3s;
+}
+.nav_bgcolor3{
+    background-color: rgba(0,79,126,0.5);
     transition: all 0.3s;
 }
 .con_nav{
