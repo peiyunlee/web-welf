@@ -10,7 +10,7 @@ html,body{
     min-width:1280px;
     height:100%;
     font-size:28px;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 
@@ -68,7 +68,7 @@ header,section{
     margin-top:90px;
     line-height: 60px;
     letter-spacing: 5px;
-    font-weight:400;
+    font-weight:300;
 }
 
 
@@ -103,12 +103,13 @@ section{
     top:50%;
     transform: translate(-50%,-40%);
 }
-.img_ibg{
+.img_ibg_left{
     position: absolute;
     left:32%;
 }
 .img_ibg_right{
-    left:0%;
+    position: absolute;
+    right: 32%;
 }
 .con_sideintro{
     position: absolute;
@@ -124,11 +125,6 @@ section{
     font-size: 60px;
     font-weight:400;
     letter-spacing: 10px;
-    text-shadow:
-   -1px -1px 0 #0063FF,  
-    1px -1px 0 #0063FF,
-    -1px 1px 0 #0063FF,
-     1px 1px 0 #0063FF;
 }
 .con_sicenter{
     display: flex;
@@ -136,25 +132,26 @@ section{
     align-items: center;
 }
 .line_si{
-    width:80%;
+    width:320px;
     height:12px;
     background-color: #fff;
     margin-right: 20px;
-    border:1px solid #0063FF;
 }
 .t_sibottom{
     font-size: 30px;
     font-weight:400;
     letter-spacing: 5px;
     margin-bottom:12px;
-    text-shadow:
-   -1px -1px 0 #0063FF,  
-    1px -1px 0 #0063FF,
-    -1px 1px 0 #0063FF,
-     1px 1px 0 #0063FF;
 }
 .con_ihltext{
     width:300px;
+}
+.p_content1{
+    text-shadow:
+   -1px -1px 0 #ffffff,  
+    1px -1px 0 #ffffff,
+    -1px 1px 0 #ffffff,
+     1px 1px 0 #ffffff;
 }
 .p_content2{
     margin-top:60px;
@@ -180,9 +177,28 @@ section{
 .box_number_right{
     right:0;
 }
-.img_secodelia{
-    width:30%;
-    min-width: 390px;
-    margin-left:60px;
-}
 
+/* single section */
+.img_secodelia{
+    width:20%;
+    min-width: 390px;
+    margin-left:6vw;
+}
+.ar_main_bill{
+    margin-right:10%;
+}
+.img_secbill{
+    width:40%;
+    min-width: 550px;
+    max-width: 600px;
+    margin-right:90px;
+}
+.img_secjulie{
+    width:32%;
+    min-width: 430px;
+    margin-left:4vw;
+}
+.img_secdana{
+    margin-right:140px;
+    margin-left:120px;
+}

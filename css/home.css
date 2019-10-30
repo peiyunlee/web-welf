@@ -10,7 +10,7 @@ html,body{
     min-width:1280px;
     height:100%;
     font-size:28px;
-    font-weight: 400;
+    font-weight: 300;
 }
 a{
     text-decoration: none;
@@ -51,7 +51,7 @@ header{
 .con_hbottom{
     width:100%;
     position: absolute;
-    bottom:-8.5px;
+    bottom:-10px;
     /* transform: translateY(100%); */
     animation: hmore_show 0.5s ease-out 1;
 }
@@ -127,7 +127,7 @@ h1{
 .ar_sl{
     width:700px;
     height:auto;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 5px;
     /* border:1px solid #000; */
 }
@@ -143,7 +143,7 @@ h1{
     width: 150px;
     height: 55px;
     text-align: center;
-    padding-top:7.5px;
+    padding-top:10px;
     font-size: 24px;
     font-weight: 400;
     margin: 50px 0 0 100%;
@@ -176,7 +176,7 @@ h1{
     width: 400px;
     height: 60px;
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 5px;
     padding-top:12px;
     text-align: center;
@@ -259,7 +259,7 @@ h1{
     min-width: 125px;
     height: 40px;
     text-align: center;
-    padding-top:1.5px;
+    padding-top:4px;
     font-size: 22px;
     font-weight: 400;
     letter-spacing: 2px;
