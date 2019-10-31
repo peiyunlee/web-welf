@@ -11,7 +11,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 0 5vw;
-    animation: nav_show 0.5s linear 1;
+    animation: showtobottom 0.5s linear 1;
 }
 .nav_bgcolor1{
     background-color: rgba(0,79,126,1);

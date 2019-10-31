@@ -6,17 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>WELF | 官方網站 | Mama Wu & Lovers</title>
-    
+
+    <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css" />
+
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/footer.css">
-    
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+
     <script src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
     <script src="js/scrollmagic/minified/ScrollMagic.min.js"></script>
     <script src="js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
 
-    <script src="js/jquery-3.4.1.min.js"></script>
+
     <script src="js/home.js"></script>
+
+
 
 </head>
 
@@ -58,18 +65,20 @@
             <img class="img_sbg1" src="images/home/second/bg1.png" alt="">
             <img class="img_sbg2" src="images/home/second/bg2.png" alt="">
             <div class="con_sarticle">
-                <article class="ar_sl">
-                    <h1>故事背景
-                        <img class="img_sdot" src="images/home/second/dot.png" alt="">
-                    </h1>
-                    <p class="p_lcontent1">
-                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp這個世界分成了五大地區，五大地區都各有一個大河川，在河川裡曾經有一種神秘的物種 —— WELF水精靈
-                    </p>
-                    <p class="p_lcontent2">
-                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp這樣的美麗物種曾經和人類一同生活在這個世界上，但卻在某家黑心的實驗室迫害下慢慢地在世界上絕跡......
-                    </p>
-                    <!-- <a href="pages/story.html" class="btn_smore">MORE</a> -->
-                </article>
+                <div class="con_arsl">
+                    <article class="ar_sl">
+                        <h1>故事背景
+                            <img class="img_sdot" src="images/home/second/dot.png" alt="">
+                        </h1>
+                        <p class="p_lcontent1">
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp這個世界分成了五大地區，五大地區都各有一個大河川，在河川裡曾經有一種神秘的物種 —— WELF水精靈
+                        </p>
+                        <p class="p_lcontent2">
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp這樣的美麗物種曾經和人類一同生活在這個世界上，但卻在某家黑心的實驗室迫害下慢慢地在世界上絕跡......
+                        </p>
+                        <a href="pages/story.html" class="btn_smore">MORE</a>
+                    </article>
+                </div>
                 <article class="ar_sr">
                     <img class="img_swindow" src="images/home/second/glab.png" alt="">
                     <div class="t_crcontent">Grassland laboratory</div>
@@ -79,47 +88,49 @@
         <section id="sec_character" class="sec_character">
             <img class="img_cbg" src="images/home/third/bg.png" alt="">
             <img class="img_bganimroll img_cbganim" src="images/home/third/bgani.png" alt="">
-            <article class="ar_character">
-                <div class="con_cheader">
-                    <h1>
-                        <img class="img_sdot" src="images/home/second/dot.png" alt="">
-                        拯救水世界的主角們
-                        <img class="img_sdot" src="images/home/second/dot.png" alt="">
-                    </h1>
-                    <p>主角將透過水精靈同伴們的能力突破重重困境</p>
-                </div>
-                <div class="con_ccontent">
-                    <button class="btn_c btn_cleft">
-                        <img class="img_crbtn" src="images/home/first/music.png" alt="">
-                    </button>
-                    <div class="con_chcontent">
-                        <div class="con_chlist con_chlist1">
-                            <img class="img_chead img_chead1" src="images/home/third/head4.png" alt="">
-                            <div class="box_cname box_cname1">Bill</div>
-                        </div>
-                        <div class="con_chlist con_chlist2">
-                            <img class="img_chead img_chead2" src="images/home/third/head3.png" alt="">
-                            <div class="box_cname box_cname2">Julie</div>
-                        </div>
-                        <div class="con_chlist con_chlist3">
-                            <img class="img_chead img_chead3" src="images/home/third/head1.png" alt="">
-                            <div class="box_cname box_cname3">Phil</div>
-                        </div>
-                        <div class="con_chlist con_chlist4">
-                            <img class="img_chead img_chead4" src="images/home/third/head2.png" alt="">
-                            <div class="box_cname box_cname4">odelia</div>
-                        </div>
-                        <div class="con_chlist con_chlist5">
-                            <img class="img_chead img_chead5" src="images/home/third/head5.png" alt="">
-                            <div class="box_cname box_cname5">Dana</div>
-                        </div>
+            <div class="con_arch">
+                <article class="ar_character">
+                    <div class="con_cheader">
+                        <h1>
+                            <img class="img_sdot" src="images/home/second/dot.png" alt="">
+                            拯救水世界的主角們
+                            <img class="img_sdot" src="images/home/second/dot.png" alt="">
+                        </h1>
+                        <p>主角將透過水精靈同伴們的能力突破重重困境</p>
                     </div>
-                    <button class="btn_c btn_cright">
-                        <img class="img_crbtn" src="images/home/first/music.png" alt="">
-                    </button>
+                    <div class="con_ccontent">
+                        <button class="btn_c btn_cleft">
+                            <img class="btn_c" src="images/home/third/left.png" alt="">
+                        </button>
+                        <div class="con_chcontent">
+                            <div class="con_chlist con_chlist1">
+                                <img class="img_chead img_chead1" src="images/home/third/head4.png" alt="">
+                                <div class="box_cname box_cname1">Bill</div>
+                            </div>
+                            <div class="con_chlist con_chlist2">
+                                <img class="img_chead img_chead2" src="images/home/third/head3.png" alt="">
+                                <div class="box_cname box_cname2">Julie</div>
+                            </div>
+                            <div class="con_chlist con_chlist3">
+                                <img class="img_chead img_chead3" src="images/home/third/head1.png" alt="">
+                                <div class="box_cname box_cname3">Phil</div>
+                            </div>
+                            <div class="con_chlist con_chlist4">
+                                <img class="img_chead img_chead4" src="images/home/third/head2.png" alt="">
+                                <div class="box_cname box_cname4">odelia</div>
+                            </div>
+                            <div class="con_chlist con_chlist5">
+                                <img class="img_chead img_chead5" src="images/home/third/head5.png" alt="">
+                                <div class="box_cname box_cname5">Dana</div>
+                            </div>
+                        </div>
+                        <button class="btn_c btn_cright">
+                            <img class="img_crbtn" src="images/home/third/right.png" alt="">
+                        </button>
 
-                </div>
-            </article>
+                    </div>
+                </article>
+            </div>
         </section>
         <section id="sec_play" class="sec_play">
             <img class="img_pbg" src="images/home/fourth/bgb.png" alt="">
@@ -133,19 +144,21 @@
                     <div class="t_pteamname">Mama Wu & Lovers</div>
                 </article>
                 <article class="al_pr">
-                    <p class="p_prp">一起探索失落美麗的水世界</p>
-                    <div class="box_prcontent">
-                        <div class="t_prcheader">發售日</div>
-                        <div class="t_prccontent">2018.12.05(三)</div>
+                    <div class="con_alpr">
+                        <p class="p_prp">一起探索失落美麗的水世界</p>
+                        <div id="box_prc1" class="box_prcontent">
+                            <div class="t_prcheader">發售日</div>
+                            <div class="t_prccontent">2018.12.05(三)</div>
+                        </div>
+                        <div id="box_prc2" class="box_prcontent">
+                            <div class="t_prcheader">遊戲平台</div>
+                            <div class="t_prccontent">PC平台</div>
+                        </div>
+                        <div id="box_prc3" class="box_prcontent">
+                            <div class="t_prccontent t_prccontent3">支援中文</div>
+                        </div>
+                        <a class="a_prahref">立即購買</a>
                     </div>
-                    <div class="box_prcontent">
-                        <div class="t_prcheader">遊戲平台</div>
-                        <div class="t_prccontent">PC平台</div>
-                    </div>
-                    <div class="box_prcontent">
-                        <div class="t_prccontent t_prccontent3">支援中文</div>
-                    </div>
-                    <a class="a_prahref">立即購買</a>
                 </article>
             </div>
         </section>
@@ -183,5 +196,8 @@
             <img class="img_flogo" src="images/footer/logo.png" alt="">
         </footer>
     </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick/slick.min.js"></script>
 </body>
+
 </html>
