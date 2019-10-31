@@ -1,20 +1,222 @@
-*{
-    padding:0;
-    margin:0;
-    box-sizing:border-box;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     position: relative;
     font-family: 'Noto Sans CJK TC';
 }
-html,body{
-    width:100%;
-    min-width:1280px;
-    height:100%;
-    font-size:28px;
+
+html,
+body {
+    width: 100%;
+    min-width: 1280px;
+    height: 100%;
+    font-size: 28px;
     font-weight: 300;
 }
 
 
 /* all */
-a{
+
+a {
     text-decoration: none;
+}
+
+header {
+    width: 100%;
+    min-width: 1280px;
+    height: 1080px;
+    background-image: url(../images/play/first/bg.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.con {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0 14vw;
+    display: flex;
+    align-items: center;
+}
+
+.intro {
+    color: #004F7E;
+    width: 25%;
+    min-width: 400px;
+    line-height: 50px;
+    text-align: justify;
+    padding: 240px 0;
+}
+
+.wtop {
+    display: flex;
+    align-items: center;
+}
+
+.ttitle {
+    font-size: 60px;
+    font-weight: 500;
+    letter-spacing: 10px;
+}
+
+.stitle {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    margin-top: 8px
+}
+
+.ul {
+    width: 100%;
+    height: 6px;
+    background-color: #004F7E;
+    margin-top: 10px;
+}
+
+.ddm {
+    margin-left: 45px;
+}
+
+.wbotm {
+    margin-top: 90px;
+    line-height: 60px;
+    letter-spacing: 5px;
+    font-weight: 300;
+}
+
+
+/*cb*/
+
+.cbintro {
+    width: 100%;
+    min-width: 550px;
+    line-height: 50px;
+    text-align: justify;
+    padding: 240px 0;
+    margin: 0 0 0 5%;
+}
+
+.cb {
+    position: absolute;
+    width: 80%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 2;
+}
+
+.dotl {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+}
+
+.clw {
+    width: 300px;
+    height: 300px;
+    min-width: 200px;
+    min-height: 200px;
+    border: #0063FF solid 1px;
+    border-radius: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.introl {
+    width: 80px;
+    top: -110px;
+    height: 2px;
+    background-color: #0063FF;
+}
+
+.cbt {
+    color: #0063FF;
+    margin: 0 0 0 1%;
+}
+
+.cbtop {
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 10px;
+}
+
+.cbline {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.cbl {
+    width: 320px;
+    height: 12px;
+    background-color: #0063FF;
+    margin-right: 20px;
+}
+
+.cbbotm {
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin-bottom: 12px;
+}
+
+section {
+    width: 100%;
+    min-width: 1280px;
+    height: 1080px;
+    background-image: url(../images/play/second/bg.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.sttitle {
+    font-size: 60px;
+    font-weight: 500;
+    letter-spacing: 10px;
+}
+
+.sstitle {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    margin-top: 8px
+}
+
+.sul {
+    width: 100%;
+    height: 6px;
+    background-color: #fff;
+    margin-top: 10px;
+}
+
+.s {
+    color: #fff;
+    top: -200px;
+}
+
+.wdm {
+    margin-left: 45px;
+}
+
+iframe {
+    top: 130px;
+    width: 800px;
+    height: 480px;
+    right: 50px;
+}
+
+.ca {
+    top: 250px;
+    right: 160px;
+    z-index: 2;
 }
