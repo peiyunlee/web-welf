@@ -193,13 +193,38 @@ header {
     margin-bottom: 12px;
 }
 
+
+/* section */
+
 section {
     width: 100%;
-    min-width: 1280px;
     height: 1080px;
-    background-image: url(../images/play/second/bg.jpg);
+    display: flex;
+    align-items: center;
     background-size: cover;
     overflow: hidden;
+}
+
+.con2 {
+    position: relative;
+    min-width: 400px;
+    width: 100%;
+    height: 100%;
+    padding: 0 14vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.bg2 {
+    width: 25%;
+    min-width: 400px;
+    line-height: 50px;
+    text-align: justify;
+    position: absolute;
+    width: 100%;
+    min-width: 1920px;
+    min-height: 1080px;
+    right: 0;
 }
 
 .sttitle {
@@ -223,23 +248,35 @@ section {
 }
 
 .s {
+    margin-top: 240px;
+    z-index: 4;
     color: #fff;
-    top: -200px;
 }
 
 .wdm {
     margin-left: 45px;
 }
 
+.video-container {
+    margin-top: 10px;
+    width: 80%;
+    min-height: 550px;
+    border: #004F7E solid 3px;
+    overflow: hidden;
+    border-radius: 20px;
+    align-self: center;
+}
+
 iframe {
-    top: 130px;
-    width: 800px;
-    height: 480px;
-    right: 50px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .ca {
-    top: 250px;
-    right: 160px;
+    position: absolute;
+    top: 670px;
+    margin-left: 55%;
     z-index: 2;
 }
