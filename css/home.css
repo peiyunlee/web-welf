@@ -234,7 +234,6 @@ h1 {
 .sec_character {
     height: 55.7vw;
     min-height: 880px;
-    ;
 }
 
 .img_cbg {
@@ -514,7 +513,7 @@ h1 {
 /* story */
 
 .showtoup1 {
-    animation: showtoup1 0.75s 0s ease-out 1;
+    animation: showtoup1 0.7s 0s ease-out 1;
     animation-fill-mode: forwards;
 }
 
@@ -522,7 +521,7 @@ h1 {
 /* character */
 
 .showtoup2 {
-    animation: showtoup2 1s 0s ease-out 1;
+    animation: showtoup2 0.75s 0s ease-out 1;
     animation-fill-mode: forwards;
 }
 
