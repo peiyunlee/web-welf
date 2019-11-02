@@ -167,12 +167,18 @@ h1{
     margin-left:80px;
 }
 .img_swindow{
+    outline: 1px solid red;
     display: block;
     width: 25vw;
     min-width: 329px;
     max-width: 440px;
+    height:25vw;
+    min-height: 329px;
+    max-height: 440px;
     margin-left: auto;
     margin-right: auto;
+    background-image: url(/images/home/second/gboss.png);
+    background-size: cover;
 }
 .t_crcontent{
     margin-top:30px;
@@ -234,42 +240,38 @@ h1{
     display: flex;
     align-items: center;
 }
+
+/* slick */
 .con_chcontent{
-    width: auto;
+    /* outline:1px solid red; */
+    width: 65%;
+    height:450px;
     display: flex;
     justify-content: center;
-    margin:5% 0 0 0;
+    margin:3% 0 0 0;
 }
-.img_crbtn{
-    width:50px;
-    margin-top:15px;
-}
+
 .con_chlist{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width:12vw;
-    min-width: 150px;
-    margin:0 1%
-}
-.con_chlist3{
-    z-index: 2;
-    transform:scale(1.4) translateY(15px);
-    margin:0 4%;
-    min-width: 150px;
+    width:13vw;
+    min-width:150px;
+    margin: 0.15% 0px 0.15% 0px;
+    transition:all 0.25s;
+    /* border:2px solid #004F7E; */
 }
 .img_chead{
-    width: 100%;
-}
-.box_cname3{
-    background-color: #004F7E;
-    color: #ffffff;
-    margin-top:15px;
+    width:12vw;
+    min-width:150px;
+    transition:all 0.25s;
+    margin-left: auto;
+    margin-right: auto;
 }
 .box_cname{
     border:2px solid #004F7E;
     border-radius: 50px;
-    margin-top:25px;
+    margin-top:15px;
     width:55%;
     min-width: 125px;
     height: 40px;
@@ -278,6 +280,34 @@ h1{
     font-size: 22px;
     font-weight: 400;
     letter-spacing: 2px;
+    margin-left:auto;
+    margin-right:auto;
+    transition:all 0.25s;
+}
+.slick-current{
+    /* width:13.5vw; */
+    transform: scale(1.3);
+    transform-origin: 50%;
+    min-width:200px;
+    margin: 0.20% 0px 0.25% 0px;
+    transition:all 0.25s;
+    /* outline: 1px solid red; */
+}
+.slick-current>.img_chead{
+    /* width:13.5vw; */
+    min-width:200px;
+    transition:all 0.25s;
+}
+.img_crbtn{
+    width:50px;
+    margin-top:15px;
+}
+.slick-center>.box_cname{
+    background-color: #004F7E;
+    color: #ffffff;
+    margin-top:15px;
+    
+    transition:all 0.25s;
 }
 
 /* sec_play */
@@ -448,6 +478,10 @@ h1{
     animation: opacity_show 1.5s 0.5s ease-in-out 1;
     animation-fill-mode: forwards;
 }
+.img_swindow{
+    animation: window_rotate3d 5s 0s linear infinite;
+    animation-fill-mode: forwards;
+}
 
 
 /* animate */
@@ -532,3 +566,31 @@ h1{
         opacity: 1;
     }
 }
+@keyframes window_rotate3d{
+    0%{
+        transform: rotateY(0);
+        background-image: url(/images/home/second/glab.png);
+    }
+    2.5%{
+        transform: rotateY(0);
+        background-image: url(/images/home/second/glab.png);
+    }
+    42.5%{
+        transform: rotateY(180deg);
+        background-image: url(/images/home/second/gboss.png);
+    }
+    45%{
+        transform: rotateY(180deg);
+        background-image: url(/images/home/second/gboss.png);
+    }
+    85%{
+        transform: rotateY(360deg);
+        background-image: url(/images/home/second/forest.png);
+    }
+    87.5%{
+        transform: rotateY(360deg);
+        background-image: url(/images/home/second/forest.png);
+    }
+}
+
+
