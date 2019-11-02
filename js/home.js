@@ -9,12 +9,36 @@ $(document).ready(function () {
 
 
 	// slick
-	// $('.con_ccontent').slick({
-	// 	// prevArrow: '<button class="btn_c btn_cleft">',
-	// 	// nextArrow: '<button class="btn_c btn_cright">',
-	// 	// slidesToShow: 5,
-	// });
 
+	$('.con_chcontent').slick({
+		infinite: true,
+		slidesToShow: 3,
+		variableWidth: true,
+		centerMode: true,
+		centerPadding: '100px',
+		prevArrow: $('.btn_cleft'),
+		nextArrow: $('.btn_cright'),
+		draggable: false,
+		speed: 500,
+		useCSS: true,
+		useTransform: true,
+		responsive: [
+
+			{
+				breakpoint: 1320,
+				settings: {
+					slidesToShow: 3,
+					variableWidth: false,
+					centerPadding: '0px',
+					arrows:false,
+				}
+			},]
+	});
+
+	$('.con_chlist').on('edge', function (event, slick, direction) {
+		console.log('aa');
+		// left
+	});
 
 	// ScrollMagic
 	var controller = new ScrollMagic.Controller();
