@@ -587,29 +587,24 @@ h1 {
 
 /* animate */
 
-@keyframes showtobottom {
-    0% {
-        transform: translateY(-100%);
-    }
-    100% {
-        transform: translateY(0%);
-    }
-}
-
 @keyframes showtoup1 {
     0% {
+        opacity: 0;
         transform: translateY(100%);
     }
     100% {
+        opacity: 1;
         transform: translateY(0%);
     }
 }
 
 @keyframes showtoup2 {
     0% {
+        opacity: 0;
         bottom: -800px;
     }
     100% {
+        opacity: 1;
         bottom: 0px;
     }
 }
