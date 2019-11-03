@@ -6,11 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>角色介紹 | WELF | Mama Wu & Lovers</title>
-    
+
     <link rel="stylesheet" href="../css/character.css">
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/footer.css">
 
+    <script src="../js/scrollmagic/uncompressed/ScrollMagic.js"></script>
+    <script src="../js/scrollmagic/minified/ScrollMagic.min.js"></script>
+    <script src="../js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/chatacter.js"></script>
 </head>
 
 <body>
@@ -33,88 +39,99 @@
             <img class="img_hbg" src="../images/character/first/bg.png" alt="">
             <div class="con_ar">
                 <article class="ar_main">
-                    <div class="con_headline">
-                        <div class="con_hltext">
-                            <div class="t_hlch">角色介紹</div>
-                            <div class="t_hlen">Introduction</div>
-                            <div class="line_hl"></div>
+                    <div class="con_armain con_armain_anim">
+                        <div class="con_headline">
+                            <div class="con_hltext">
+                                <div class="t_hlch">角色介紹</div>
+                                <div class="t_hlen">Introduction</div>
+                                <div class="line_hl"></div>
+                            </div>
+                            <img class="img_dot" src="../images/character/first/dm.png" alt="">
                         </div>
-                        <img class="img_dot" src="../images/character/first/dm.png" alt="">
-                    </div>
-                    <div class="con_content">
-                        <p class="p_content">
-                            &nbsp&nbsp&nbsp&nbsp&nbsp在Phill的勇敢和善良的驅動下，他與水精靈們踏上拯救家園之路，來到水精靈倖存部落後獲得了能夠召喚水精靈的水晶手環，並且一路收集水晶碎片淨化各區域深受汙染的水精靈們。
-                        </p>
+                        <div class="con_content">
+                            <p class="p_content">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp在Phill的勇敢和善良的驅動下，他與水精靈們踏上拯救家園之路，來到水精靈倖存部落後獲得了能夠召喚水精靈的水晶手環，並且一路收集水晶碎片淨化各區域深受汙染的水精靈們。
+                            </p>
+                        </div>
                     </div>
                 </article>
-                <img class="img_hphill" src="../images/character/first/phill.png" alt="">
+                <img class="img_hphill img_ch img_hanim" src="../images/character/first/phill.png" alt="">
             </div>
         </header>
         <section id="sec_intro1">
             <img class="img_bganimroll img_sbganim" src="../images/character/section/fbg.png" alt="">
             <img class="img_ibg_left" src="../images/character/section/irbg.png" alt="">
             <div class="con_sideintro con_sideintro_right">
-                <div class="t_sitop">MALE LEAD<br>HERO</div>
-                <div class="con_sicenter">
-                    <div class="line_si"></div>
-                    <img class="img_sidot" src="../images/character/section/dot.png" alt="">
+                <div id="box_sileft1" class="box_si">
+                    <div class="t_sitop">MALE LEAD<br>HERO</div>
+                    <div class="con_sicenter">
+                        <div class="line_si"></div>
+                        <img class="img_sidot" src="../images/character/section/dot.png" alt="">
+                    </div>
+                    <div class="t_sibottom">Brave | Naive<br>Kindness</div>
+                    <img src="../images/character/section/icon.png" alt="">
                 </div>
-                <div class="t_sibottom">Brave | Naive<br>Kindness</div>
-                <img src="../images/character/section/icon.png" alt="">
             </div>
             <div class="box_number">No.01</div>
             <div class="con_ar">
                 <article class="ar_main ar_main_tcolor">
-                    <div class="con_headline">
-                        <div class="con_hltext con_ihltext">
-                            <div class="t_hlch">菲爾</div>
-                            <div class="t_hlen">Phill</div>
-                            <div class="line_hl line_hl_bgcolor"></div>
+                    <div id="con_armain1" class="con_armain">
+                        <div class="con_headline">
+                            <div class="con_hltext con_ihltext">
+                                <div class="t_hlch">菲爾</div>
+                                <div class="t_hlen">Phill</div>
+                                <div class="line_hl line_hl_bgcolor"></div>
+                            </div>
+                            <img class="img_dot" src="../images/character/section/dab.png" alt="">
                         </div>
-                        <img class="img_dot" src="../images/character/section/dab.png" alt="">
-                    </div>
-                    <div class="con_content">
-                        <p class="p_content p_content1">
-                            &nbsp&nbsp&nbsp&nbsp&nbsp主角，充滿好奇心又勇敢的10歲小男孩，從邪惡的人類手中解救水精靈，名字象徵仁爱，友善，善良之意思。
-                        </p>
-                        <p class="p_content p_content2">
-                            &nbsp&nbsp&nbsp&nbsp&nbsp獲得手環後可進行普通攻擊水刃攻擊並使用水精靈的技能。
-                        </p>
+                        <div class="con_content">
+                            <p class="p_content p_content1">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp主角，充滿好奇心又勇敢的10歲小男孩，從邪惡的人類手中解救水精靈，名字象徵仁爱，友善，善良之意思。
+                            </p>
+                            <p class="p_content p_content2">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp獲得手環後可進行普通攻擊水刃攻擊並使用水精靈的技能。
+                            </p>
+                        </div>
+
                     </div>
                 </article>
-                <img class="img_secphill" src="../images/character/section/phill.png" alt="">
+                <img id="img_anim" class="img_ch img_secphill" src="../images/character/section/phill.png" alt="">
             </div>
         </section>
         <section id="sec_intro2">
             <img class="img_bganimroll img_sbganim" src="../images/character/section/fbg.png" alt="">
             <img class="img_ibg_right" src="../images/character/section/ilbg.png" alt="">
             <div class="con_sideintro con_sideintro_left">
-                <div class="t_sitop">ORIGINAL<br>WELF</div>
-                <div class="con_sicenter">
-                    <div class="line_si"></div>
-                    <img class="img_sidot" src="../images/character/section/dot.png" alt="">
+                <div id="box_siright1" class="box_si">
+                    <div class="t_sitop">ORIGINAL<br>WELF</div>
+                    <div class="con_sicenter">
+                        <div class="line_si"></div>
+                        <img class="img_sidot" src="../images/character/section/dot.png" alt="">
+                    </div>
+                    <div class="t_sibottom">Brave | Naive<br>Kindness</div>
+                    <img src="../images/character/section/icon.png" alt="">
                 </div>
-                <div class="t_sibottom">Brave | Naive<br>Kindness</div>
-                <img src="../images/character/section/icon.png" alt="">
             </div>
             <div class="con_ar">
-                <img class="img_secodelia" src="../images/character/section/welf1.png" alt="">
+                <img id="img_anim" class="img_ch img_secodelia" src="../images/character/section/welf1.png" alt="">
                 <article class="ar_main ar_main_tcolor ar_main_odelia">
-                    <div class="con_headline">
-                        <div class="con_hltext con_ihltext">
-                            <div class="t_hlch">奧蒂莉亞</div>
-                            <div class="t_hlen">Odelia</div>
-                            <div class="line_hl line_hl_bgcolor"></div>
+                    <div id="con_armain2" class="con_armain">
+                        <div class="con_headline">
+                            <div class="con_hltext con_ihltext">
+                                <div class="t_hlch">奧蒂莉亞</div>
+                                <div class="t_hlen">Odelia</div>
+                                <div class="line_hl line_hl_bgcolor"></div>
+                            </div>
+                            <img class="img_dot" src="../images/character/section/dab.png" alt="">
                         </div>
-                        <img class="img_dot" src="../images/character/section/dab.png" alt="">
-                    </div>
-                    <div class="con_content">
-                        <p class="p_content p_content1">
-                            &nbsp&nbsp&nbsp&nbsp&nbsp呆萌的旁白水精靈，女孩子，出現在菲爾家門口，被菲爾追著後將菲爾帶進水世界的水精靈
-                        </p>
-                        <p class="p_content p_content2">
-                            &nbsp&nbsp&nbsp&nbsp&nbsp不害怕人類，覺得人類世界很稀奇很有趣，為最初始水精靈樣貌，以水為原型。
-                        </p>
+                        <div class="con_content">
+                            <p class="p_content p_content1">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp呆萌的旁白水精靈，女孩子，出現在菲爾家門口，被菲爾追著後將菲爾帶進水世界的水精靈
+                            </p>
+                            <p class="p_content p_content2">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp不害怕人類，覺得人類世界很稀奇很有趣，為最初始水精靈樣貌，以水為原型。
+                            </p>
+                        </div>
                     </div>
                 </article>
             </div>
@@ -124,67 +141,75 @@
             <img class="img_bganimroll img_sbganim" src="../images/character/section/fbg.png" alt="">
             <img class="img_ibg_left" src="../images/character/section/irbg.png" alt="">
             <div class="con_sideintro con_sideintro_right">
-                <div class="t_sitop">WARRIOR<br>WELF</div>
-                <div class="con_sicenter">
-                    <div class="line_si"></div>
-                    <img class="img_sidot" src="../images/character/section/dot.png" alt="">
+                <div id="box_sileft2" class="box_si">
+                    <div class="t_sitop">WARRIOR<br>WELF</div>
+                    <div class="con_sicenter">
+                        <div class="line_si"></div>
+                        <img class="img_sidot" src="../images/character/section/dot.png" alt="">
+                    </div>
+                    <div class="t_sibottom">Strong | Power<br>Protector</div>
+                    <img src="../images/character/section/icon.png" alt="">
                 </div>
-                <div class="t_sibottom">Strong | Power<br>Protector</div>
-                <img src="../images/character/section/icon.png" alt="">
             </div>
             <div class="box_number">No.03</div>
             <div class="con_ar">
                 <article class="ar_main ar_main_tcolor ar_main_bill">
-                    <div class="con_headline">
-                        <div class="con_hltext con_ihltext">
-                            <div class="t_hlch">比爾</div>
-                            <div class="t_hlen">Bill</div>
-                            <div class="line_hl line_hl_bgcolor"></div>
+                    <div id="con_armain3" class="con_armain">
+                        <div class="con_headline">
+                            <div class="con_hltext con_ihltext">
+                                <div class="t_hlch">比爾</div>
+                                <div class="t_hlen">Bill</div>
+                                <div class="line_hl line_hl_bgcolor"></div>
+                            </div>
+                            <img class="img_dot" src="../images/character/section/dab.png" alt="">
                         </div>
-                        <img class="img_dot" src="../images/character/section/dab.png" alt="">
-                    </div>
-                    <div class="con_content">
-                        <p class="p_content p_content1">
-                            &nbsp&nbsp&nbsp&nbsp&nbsp是水精靈界的巨人，身高體型比大多數水精靈大了四五倍，因為體型大相對力氣也很大，是一個保護叢林的存在。
-                        </p>
-                        <p class="p_content p_content2">
-                            &nbsp&nbsp&nbsp&nbsp&nbsp有點牛脾氣不知變通，常常因為自己的固執造成別人的困擾。
-                        </p>
+                        <div class="con_content">
+                            <p class="p_content p_content1">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp是水精靈界的巨人，身高體型比大多數水精靈大了四五倍，因為體型大相對力氣也很大，是一個保護叢林的存在。
+                            </p>
+                            <p class="p_content p_content2">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp有點牛脾氣不知變通，常常因為自己的固執造成別人的困擾。
+                            </p>
+                        </div>
                     </div>
                 </article>
-                <img class="img_secbill" src="../images/character/section/welf2.png" alt="">
+                <img id="img_anim" class="img_ch img_secbill" src="../images/character/section/welf2.png" alt="">
             </div>
         </section>
         <section id="sec_intro4">
             <img class="img_bganimroll img_sbganim" src="../images/character/section/fbg.png" alt="">
             <img class="img_ibg_right" src="../images/character/section/ilbg.png" alt="">
             <div class="con_sideintro con_sideintro_left">
-                <div class="t_sitop">GENTAL<br>WELF</div>
-                <div class="con_sicenter">
-                    <div class="line_si"></div>
-                    <img class="img_sidot" src="../images/character/section/dot.png" alt="">
+                <div id="box_siright2" class="box_si">
+                    <div class="t_sitop">GENTAL<br>WELF</div>
+                    <div class="con_sicenter">
+                        <div class="line_si"></div>
+                        <img class="img_sidot" src="../images/character/section/dot.png" alt="">
+                    </div>
+                    <div class="t_sibottom">Soft | Tender<br> Naughty</div>
+                    <img src="../images/character/section/icon.png" alt="">
                 </div>
-                <div class="t_sibottom">Soft | Tender<br> Naughty</div>
-                <img src="../images/character/section/icon.png" alt="">
             </div>
             <div class="con_ar">
-                <img class="img_secjulie" src="../images/character/section/welf3.png" alt="">
+                <img id="img_anim" class="img_ch img_secjulie" src="../images/character/section/welf3.png" alt="">
                 <article class="ar_main ar_main_tcolor">
-                    <div class="con_headline">
-                        <div class="con_hltext con_ihltext">
-                            <div class="t_hlch">朱莉</div>
-                            <div class="t_hlen">Julie</div>
-                            <div class="line_hl line_hl_bgcolor"></div>
+                    <div id="con_armain4" class="con_armain">
+                        <div class="con_headline">
+                            <div class="con_hltext con_ihltext">
+                                <div class="t_hlch">朱莉</div>
+                                <div class="t_hlen">Julie</div>
+                                <div class="line_hl line_hl_bgcolor"></div>
+                            </div>
+                            <img class="img_dot" src="../images/character/section/dab.png" alt="">
                         </div>
-                        <img class="img_dot" src="../images/character/section/dab.png" alt="">
-                    </div>
-                    <div class="con_content">
-                        <p class="p_content p_content1">
-                            &nbsp&nbsp&nbsp&nbsp&nbsp來自地下水源，總是溫柔的代人代事，以退為進從不攻擊別人，隨時帶著微笑是別人對它的既有印象。
-                        </p>
-                        <p class="p_content p_content2">
-                            &nbsp&nbsp&nbsp&nbsp&nbsp但其實內心跟守護神一樣調皮，常常被說其實是個腹黑。
-                        </p>
+                        <div class="con_content">
+                            <p class="p_content p_content1">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp來自地下水源，總是溫柔的代人代事，以退為進從不攻擊別人，隨時帶著微笑是別人對它的既有印象。
+                            </p>
+                            <p class="p_content p_content2">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp但其實內心跟守護神一樣調皮，常常被說其實是個腹黑。
+                            </p>
+                        </div>
                     </div>
                 </article>
             </div>
@@ -194,35 +219,41 @@
             <img class="img_bganimroll img_sbganim" src="../images/character/section/fbg.png" alt="">
             <img class="img_ibg_left" src="../images/character/section/irbg.png" alt="">
             <div class="con_sideintro con_sideintro_right">
-                <div class="t_sitop">QUICK<br>WELF</div>
-                <div class="con_sicenter">
-                    <div class="line_si"></div>
-                    <img class="img_sidot" src="../images/character/section/dot.png" alt="">
+                <div id="box_sileft3" class="box_si">
+                    <div class="t_sitop">QUICK<br>WELF</div>
+                    <div class="con_sicenter">
+                        <div class="line_si"></div>
+                        <img class="img_sidot" src="../images/character/section/dot.png" alt="">
+                    </div>
+                    <div class="t_sibottom">Pure | Light<br>Sunshine</div>
+                    <img src="../images/character/section/icon.png" alt="">
                 </div>
-                <div class="t_sibottom">Pure | Light<br>Sunshine</div>
-                <img src="../images/character/section/icon.png" alt="">
             </div>
             <div class="box_number">No.05</div>
             <div class="con_ar">
                 <article class="ar_main ar_main_tcolor">
-                    <div class="con_headline">
-                        <div class="con_hltext con_ihltext">
-                            <div class="t_hlch">戴納</div>
-                            <div class="t_hlen">Dana</div>
-                            <div class="line_hl line_hl_bgcolor"></div>
+                    <div id="con_armain5" class="con_armain">
+                        <div id="con_armain3" class="con_armain">
+                            <div class="con_headline">
+                                <div class="con_hltext con_ihltext">
+                                    <div class="t_hlch">戴納</div>
+                                    <div class="t_hlen">Dana</div>
+                                    <div class="line_hl line_hl_bgcolor"></div>
+                                </div>
+                                <img class="img_dot" src="../images/character/section/dab.png" alt="">
+                            </div>
+                            <div class="con_content">
+                                <p class="p_content p_content1">
+                                    &nbsp&nbsp&nbsp&nbsp&nbsp喜歡奔馳的水精靈，因為總是喜歡快速的把事情做完，常常被說個性急躁，其實除了自己動作快以外並不會去催促他人。
+                                </p>
+                                <p class="p_content p_content2">
+                                    &nbsp&nbsp&nbsp&nbsp&nbsp聽說百米只要5秒而已，很怕麻煩所以有人找他做事時會突然消失。
+                                </p>
+                            </div>
                         </div>
-                        <img class="img_dot" src="../images/character/section/dab.png" alt="">
-                    </div>
-                    <div class="con_content">
-                        <p class="p_content p_content1">
-                            &nbsp&nbsp&nbsp&nbsp&nbsp喜歡奔馳的水精靈，因為總是喜歡快速的把事情做完，常常被說個性急躁，其實除了自己動作快以外並不會去催促他人。
-                        </p>
-                        <p class="p_content p_content2">
-                            &nbsp&nbsp&nbsp&nbsp&nbsp聽說百米只要5秒而已，很怕麻煩所以有人找他做事時會突然消失。
-                        </p>
                     </div>
                 </article>
-                <img class="img_secdana" src="../images/character/section/welf4.png" alt="">
+                <img id="img_anim" class="img_ch img_secdana" src="../images/character/section/welf4.png" alt="">
             </div>
         </section>
         <footer>

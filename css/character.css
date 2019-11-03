@@ -45,10 +45,13 @@ section {
     color: #ffffff;
     line-height: 50px;
     text-align: justify;
-    padding: 240px 0;
-    /* outline: 1px solid red; */
+    margin: 240px 0;
+    overflow:hidden;
 }
-
+.con_armain{
+    /*  */
+    opacity: 0;
+}
 .con_headline {
     display: flex;
     align-items: center;
@@ -136,10 +139,11 @@ section {
 }
 
 .con_sideintro {
+    overflow: hidden;
     position: absolute;
     color: #ffffff;
+    
 }
-
 .con_sideintro_right {
     right: 50px;
 }
@@ -234,4 +238,74 @@ section {
 .img_secdana {
     margin-right: 140px;
     margin-left: 120px;
+}
+
+.con_armain_anim{
+    animation: showtoup 0.5s 0s ease-out 1;
+    animation-fill-mode: forwards;
+}
+
+.img_ch{
+    opacity: 0;
+}
+.img_anim{
+    animation: opacity_showup 0.5s 0.5s ease-out 1;
+    animation-fill-mode: forwards;
+}
+.img_hanim{
+    animation: opacity_showup 1s 0.5s ease-out 1;
+    animation-fill-mode: forwards;
+}
+
+.box_si{
+    transform: translateX(-100%);
+    
+}
+.box_siright_anim{
+    animation: leftshow 0.5s 0.75s ease-out 1;
+    animation-fill-mode: forwards;
+}
+.box_sileft_anim{
+    animation: rightshow 0.5s 0.75s ease-out 1;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes showtoup {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@keyframes opacity_showup {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes leftshow {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%)
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+@keyframes rightshow {
+    0% {
+        opacity: 0;
+        transform: translateX(100%)
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
 }
