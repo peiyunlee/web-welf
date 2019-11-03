@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-	// clickscroll
+	/////////////////////////////////////// clickscroll
 	$('#hbottom').click(function () {
 		$('html,body').animate({
 			scrollTop: $('#sec_story').offset().top
@@ -8,7 +8,7 @@ $(document).ready(function () {
 	});
 
 
-	// slick
+	///////////////////////////////////////// slick
 
 	$('.con_chcontent').slick({
 		infinite: true,
@@ -30,7 +30,7 @@ $(document).ready(function () {
 					slidesToShow: 3,
 					variableWidth: false,
 					centerPadding: '0px',
-					arrows:false,
+					arrows: false,
 				}
 			},]
 	});
@@ -40,7 +40,9 @@ $(document).ready(function () {
 		// left
 	});
 
-	// ScrollMagic
+
+
+	///////////////////////////////////// ScrollMagic
 	var controller = new ScrollMagic.Controller();
 
 	new ScrollMagic.Scene({
@@ -52,6 +54,7 @@ $(document).ready(function () {
 		triggerElement: "#sec_play",
 		offset: 100,
 	}).setClassToggle("#nav", "nav_bgcolor2").addTo(controller);
+
 
 	// anim
 	new ScrollMagic.Scene({
@@ -99,4 +102,69 @@ $(document).ready(function () {
 		offset: 100,
 	}).setClassToggle(".a_prahref", "showtoright5").reverse(false).addTo(controller);
 
+	/////////////////////////////////////rock with mouse move
+
+	var rockScene1 = new ScrollMagic.Scene({
+		triggerElement: "#sec_story",
+		offset: 100,
+	}).addTo(controller);
+
+	rockScene1.on("enter", function (event) {
+
+		//rock with mouse move
+		var rect = $('#sec_story')[0].getBoundingClientRect();
+		var mouse = { x: 0, y: 0, moved: false };
+		$("#sec_story").mousemove(function (e) {
+			mouse.moved = true;
+			mouse.x = e.clientX - rect.left;
+			mouse.y = e.clientY - rect.top;
+		});
+		TweenLite.ticker.addEventListener('tick', function () {
+			if (mouse.moved) {
+				parallaxIt(".img_sbganim", -150);
+			}
+			mouse.moved = false;
+		});
+		function parallaxIt(target, movement) {
+			TweenMax.to(target, 0.3, {
+				x: (mouse.x - rect.width / 2) / rect.width * movement - rect.width / 2.5,
+				y: (mouse.y - rect.height / 2) / rect.height * movement - rect.height / 5
+			});
+		}
+		$(window).on('resize scroll', function(){
+			rect = $('#sec_story')[0].getBoundingClientRect();
+		  })
+	});
+
+	var rockScene2 = new ScrollMagic.Scene({
+		triggerElement: "#sec_character",
+		offset: 100,
+	}).addTo(controller);
+
+	rockScene2.on("enter", function (event) {
+
+		//rock with mouse move
+		var rect = $('#sec_character')[0].getBoundingClientRect();
+		var mouse = { x: 0, y: 0, moved: false };
+		$("#sec_character").mousemove(function (e) {
+			mouse.moved = true;
+			mouse.x = e.clientX - rect.left;
+			mouse.y = e.clientY - rect.top;
+		});
+		TweenLite.ticker.addEventListener('tick', function () {
+			if (mouse.moved) {
+				parallaxIt(".img_cbganim", -150);
+			}
+			mouse.moved = false;
+		});
+		function parallaxIt(target, movement) {
+			TweenMax.to(target, 0.3, {
+				x: (mouse.x - rect.width / 2) / rect.width * movement - rect.width / 2.5,
+				y: (mouse.y - rect.height / 2) / rect.height * movement - rect.height / 6
+			});
+		}
+		$(window).on('resize scroll', function(){
+			rect = $('#sec_character')[0].getBoundingClientRect();
+		  })
+	});
 });
