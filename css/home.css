@@ -710,7 +710,7 @@ h1 {
     }
     100%{
         transform: rotateY(360deg);
-        background-image: url(/images/home/second/forest.png);
+        background-image: url(../images/home/second/forest.png);
     }
 }
 @keyframes t_switch1{
