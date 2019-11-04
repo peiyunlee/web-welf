@@ -12,6 +12,7 @@ $(document).ready(function () {
 
 	$('#btn_left').click(function () {
 		if(left<0)left=0-left;
+
 		$("#list"+(right)%5).removeClass("rtoleft2");
 		$("#box_cname"+(right+2)%5).removeClass("box_cname_center");
 		$("#list"+(right+1)%5).removeClass("rtoleft1");

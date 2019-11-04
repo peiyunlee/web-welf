@@ -38,11 +38,21 @@ header {
     margin-right: auto;
     overflow: hidden;
 }
-
+.box_hcanim{
+    opacity: 0;
+    z-index: 2;
+    position: absolute;
+    background-color: #fff;
+    width:100%;
+    height:80%;
+    animation: hcontent_box 0.5s 0.75s ease-out 1;
+    animation-fill-mode: forwards;
+}
 .img_hlogo {
     width: 100%;
-    transform: translateY(130%);
-    animation: hcontent_show 0.5s 0.75s ease-out 1;
+    opacity:0;
+    /* transform: translateY(130%); */
+    animation: opacity_show 0.2s 0.9s ease-out 1;
     animation-fill-mode: forwards;
 }
 
@@ -53,7 +63,7 @@ header {
     margin-right: auto;
     margin-top: 10px;
     transform: translateY(130%);
-    animation: hcontent_show 0.5s 0.75s ease-out 1;
+    animation: hcontent_show 0.5s 1s ease-out 1;
     animation-fill-mode: forwards;
 }
 
@@ -596,7 +606,7 @@ h1 {
     animation-fill-mode: forwards;
 }
 .img_swindow{
-    animation: window_rotate3d 5s 0s linear infinite alternate-reverse;
+    animation: window_rotate3d 8s 0s linear infinite alternate-reverse;
     /* animation-fill-mode: forwards; */
 }
 .t_anim1{
@@ -617,9 +627,18 @@ h1 {
     transform: translateX(-50%);
 }
 
-
-/* animate */
-
+.img_grass1{
+    position: absolute;
+    transform-origin: 50% 100%;
+    transform: translate(-80%,60%);
+    z-index: 2;
+}
+.img_grass2{
+    position: absolute;
+    transform-origin: 50% 100%;
+    transform: translate(115%,55%);
+    z-index: 2;
+}
 @keyframes showtoup1 {
     0% {
         opacity: 0;
@@ -662,13 +681,16 @@ h1 {
 
 @keyframes hcontent_box {
     0% {
-        transform: translate(0%, 100%);
+        opacity: 1;
+        transform: translate(0%, 101%);
     }
     50% {
+        opacity: 1;
         transform: translate(0%, 0%);
     }
     100% {
-        transform: translate(100%, 0%);
+        opacity: 1;
+        transform: translate(101%, 0%);
     }
 }
 
