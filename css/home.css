@@ -283,6 +283,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 0;
 }
 .btn_c{
     border:none;
