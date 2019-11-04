@@ -5,20 +5,20 @@ $(document).ready(function() {
     new ScrollMagic.Scene({
         triggerElement: "#sec_plays",
         offset: 100,
-    }).setClassToggle(".sw", "upshow").addindicator().reverse(false).addTo(controller);
+    }).setClassToggle(".sw", "upshow").reverse(false).addTo(controller);
 
     new ScrollMagic.Scene({
         triggerElement: "#sec_plays",
         offset: 100,
-    }).setClassToggle(".wdm", "upshow").addindicator().reverse(false).addTo(controller);
+    }).setClassToggle(".wdm", "upshow").reverse(false).addTo(controller);
 
     new ScrollMagic.Scene({
         triggerElement: "#sec_plays",
         offset: 100,
-    }).setClassToggle("#iframe", "upshow").addindicator().reverse(false).addTo(controller);
+    }).setClassToggle("#iframe", "upshow").reverse(false).addTo(controller);
 
     new ScrollMagic.Scene({
         triggerElement: "#sec_plays",
         offset: 100,
-    }).setClassToggle(".ca", "upshow").addindicator().reverse(false).addTo(controller);
+    }).setClassToggle(".ca", "upshow").reverse(false).addTo(controller);
 });
