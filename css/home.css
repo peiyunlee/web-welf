@@ -629,12 +629,14 @@ h1 {
 }
 
 .img_grass1{
+    width: 7.25vw;
     position: absolute;
     transform-origin: 50% 100%;
     transform: translate(-80%,60%);
     z-index: 2;
 }
 .img_grass2{
+    width: 5vw;
     position: absolute;
     transform-origin: 50% 100%;
     transform: translate(115%,55%);
