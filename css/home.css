@@ -611,13 +611,13 @@ h1 {
     /* animation-fill-mode: forwards; */
 }
 .t_anim1{
-    animation: t_switch1 5s 0s linear infinite alternate-reverse;
+    animation: t_switch1 8s 0s linear infinite alternate-reverse;
 }
 .t_anim2{
-    animation: t_switch2 5s 0s linear infinite alternate-reverse;
+    animation: t_switch2 8s 0s linear infinite alternate-reverse;
 }
 .t_anim3{
-    animation: t_switch1 5s 5s linear infinite alternate-reverse;
+    animation: t_switch1 8s 8s linear infinite alternate-reverse;
 }
 
 .t_crcontent{
@@ -773,36 +773,36 @@ h1 {
 }
 @keyframes t_switch1{
     0%{
-        opacity:1;
+        opacity: 1;
     }
     24%{
         opacity:1;
     }
     27%{
-        opacity:0;
+        opacity: 0;
     }
     100%{
-        opacity:0;
+        opacity: 0;
     }
 }
 @keyframes t_switch2{
     0%{
-        opacity:0;
+        opacity: 0;
     }
     24%{
-        opacity:0;
+        opacity: 0;
     }
     27%{
-        opacity:1;
+        opacity: 1;
     }
     75%{
-        opacity:1;
+        opacity: 1;
     }
     77%{
-        opacity:0;
+        opacity: 0;
     }
     100%{
-        opacity:0;
+        opacity: 0;
     }
 }
 @keyframes list_l2tor2{
