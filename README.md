@@ -1,4 +1,4 @@
-# Web_F2E_WELF
+# WELF (Web)
 網頁前端設計與開發 - 期末專題
 
 [Github Page](https://peiyunlee.github.io/Web_F2E_WELF/)
